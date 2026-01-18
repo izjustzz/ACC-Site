@@ -4,14 +4,30 @@
 
 @layer base {
   html, body, #root { height: 100%; }
-  body { font-family: Inter, ui-sans-serif, system-ui; background-color: #FAFBFC; color: #0f172a; }
-  h1,h2,h3,h4 { color: theme('colors.brand-navy'); }
+  body { font-family: theme('fontFamily.sans'); background-color: theme('colors.dark-bg'); color: white; }
+  h1,h2,h3,h4 { font-family: theme('fontFamily.heading'); color: white; font-weight: 700; }
+  a { @apply text-brand-light-cyan hover:text-brand-cyan transition; }
 }
 
 @layer components {
-  .card { @apply bg-white shadow-sm border border-gray-100 rounded-lg p-6; }
+  .card { @apply bg-card-bg border border-brand-cyan/30 rounded-xl p-6 shadow-lg backdrop-blur-sm; }
 }
 
 @layer utilities {
   .muted { color: theme('colors.muted-600'); }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
 }

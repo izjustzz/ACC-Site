@@ -6,15 +6,22 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui']
+        sans: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+        heading: ['Redaction', 'serif'],
+        serif: ['Playfair Display', 'serif']
       },
       colors: {
-        'brand-aqua': '#00A8D8',
-        'brand-teal': '#0FA3A0',
-        'brand-pink': '#FF4DA6',
-        'brand-orange': '#FF8C42',
-        'brand-navy': '#072145',
-        'muted-600': '#6B7280'
+        'brand-cyan': '#00B8A9',
+        'brand-teal': '#003D5C',
+        'brand-light-cyan': '#00E5D1',
+        'dark-bg': '#0a1a2e',
+        'card-bg': '#1a2f4a',
+        'muted-600': '#8B96A8',
+        'gradient-start': '#003D5C',
+        'gradient-end': '#00B8A9'
+      },
+      backgroundImage: {
+        'gradient-teal-cyan': 'linear-gradient(135deg, #0a3a4a 0%, #00a87a 100%)'
       }
     }
   },

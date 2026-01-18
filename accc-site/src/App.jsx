@@ -7,7 +7,7 @@ import Events from './pages/Events'
 export default function App(){
   const [route, setRoute] = useState('home')
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white to-gray-50 text-gray-900">
+    <div className="min-h-screen bg-gradient-teal-cyan text-white">
       <Nav route={route} setRoute={setRoute} />
       <main className="pt-20 max-w-6xl mx-auto px-6">
         {route === 'home' && <Home />}
