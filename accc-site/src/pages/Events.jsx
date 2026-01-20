@@ -7,13 +7,12 @@ export default function Events(){
 
       <div className="h-px bg-gradient-to-r from-transparent via-brand-light-cyan to-transparent mb-12"></div>
 
-      <p className="text-white/70 mb-12 text-lg text-center max-w-2xl mx-auto">Semester timeline below — replace with the pasted image when ready.</p>
-
-      <div className="card flex flex-col items-center hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300">
-        <div className="w-full h-72 bg-brand-teal/30 border-2 border-dashed border-brand-cyan/50 rounded-lg flex items-center justify-center text-brand-light-cyan font-semibold text-lg">
-          Timeline image placeholder
-        </div>
-        <p className="mt-6 text-sm text-white/60">Tips: Use a wide PNG/SVG for best results.</p>
+      <div className="flex justify-center">
+        <img 
+          src="/Save the date.png" 
+          alt="Events Timeline" 
+          className="max-w-4xl w-full h-auto rounded-lg shadow-lg"
+        />
       </div>
     </section>
   )

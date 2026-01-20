@@ -14,14 +14,14 @@ module.exports = {
         'brand-cyan': '#00B8A9',
         'brand-teal': '#003D5C',
         'brand-light-cyan': '#00E5D1',
-        'dark-bg': '#0a1a2e',
-        'card-bg': '#1a2f4a',
+        'dark-bg': '#050812',
+        'card-bg': '#0f1626',
         'muted-600': '#8B96A8',
         'gradient-start': '#003D5C',
         'gradient-end': '#00B8A9'
       },
       backgroundImage: {
-        'gradient-teal-cyan': 'linear-gradient(135deg, #0a3a4a 0%, #00a87a 100%)'
+        'gradient-teal-cyan': 'linear-gradient(135deg, #000000 0%, #001a24 35%, #003D5C 65%, #00a87a 100%)'
       }
     }
   },
