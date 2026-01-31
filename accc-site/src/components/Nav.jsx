@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Nav = ({route, setRoute}) => {
+const Nav = ({route, setRoute, isInverted, setIsInverted}) => {
   const links = [
     {key: 'home', label: 'Home'},
     {key: 'about', label: 'About'},
@@ -19,21 +19,35 @@ const Nav = ({route, setRoute}) => {
           <div className="text-sm font-semibold text-white tracking-wide">AWS Cloud Club</div>
         </div>
 
-        <nav className="space-x-2">
-          {links.map(l => (
-            <button
-              key={l.key}
-              onClick={() => setRoute(l.key)}
-              aria-current={route===l.key}
-              className={`text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 ${
-                route===l.key 
-                  ? 'bg-white/20 text-white shadow-lg' 
-                  : 'text-white/80 hover:text-white hover:bg-white/10'
-              }`}
-            >
-              {l.label}
-            </button>
-          ))}
+        <nav className="flex items-center gap-4">
+          <div className="space-x-2 flex">
+            {links.map(l => (
+              <button
+                key={l.key}
+                onClick={() => setRoute(l.key)}
+                aria-current={route===l.key}
+                className={`text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 ${
+                  route===l.key 
+                    ? 'bg-white/20 text-white shadow-lg' 
+                    : 'text-white/80 hover:text-white hover:bg-white/10'
+                }`}
+              >
+                {l.label}
+              </button>
+            ))}
+          </div>
+          <button
+  onClick={() => setIsInverted(!isInverted)}
+  className="ml-6 p-2 rounded-lg transition-all duration-200 hover:bg-white/10"
+  aria-label="Toggle inverse mode"
+>
+  <img
+    src="/banana.webp"
+    alt=""
+    className="h-6 w-6 opacity-80 hover:opacity-100 transition-opacity"
+  />
+</button>
+
         </nav>
       </div>
     </header>

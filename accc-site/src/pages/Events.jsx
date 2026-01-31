@@ -9,9 +9,9 @@ export default function Events(){
 
       <div className="flex justify-center">
         <img 
-          src="/Save the date.png" 
+          src="/savedate.png" 
           alt="Events Timeline" 
-          className="max-w-4xl w-full h-auto rounded-lg shadow-lg"
+          className="max-w-2xl w-full h-auto rounded-lg shadow-lg"
         />
       </div>
     </section>

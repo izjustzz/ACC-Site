@@ -2,12 +2,12 @@ import React from 'react'
 
 export default function About(){
   const boardMembers = [
-    { name: 'Board Member', role: 'President' },
-    { name: 'Board Member', role: 'Vice President' },
-    { name: 'Board Member', role: 'Treasurer' },
-    { name: 'Board Member', role: 'Secretary' },
-    { name: 'Board Member', role: 'Events Lead' },
-    { name: 'Board Member', role: 'Workshops Lead' }
+    { name: 'Chris Enriquez', role: 'President', image: '/Eboard/chris.jpeg' },
+    { name: 'Zakir Zurga', role: 'Cloud Development Director', image: '/Eboard/zakir.jpeg' },
+    { name: 'Kate Lustgarten', role: 'Operations Director', image: '/Eboard/kate.jpeg' },
+    { name: 'Narwan Joyenda', role: 'Programming Director', image: '/Eboard/narwan.jpeg' },
+    { name: 'Stacey Chen', role: 'Design Director', image: '/Eboard/stacey.jpeg' },
+    { name: 'Malak Al-Hassan', role: 'Communications Director', image: '/Eboard/malak.jpeg' }
   ]
 
   return (
@@ -31,7 +31,7 @@ export default function About(){
 
         <div className="text-center">
           <h3 className="text-3xl font-bold mb-4 text-brand-light-cyan">Get Involved</h3>
-          <p className="text-white/70 max-w-2xl mx-auto leading-relaxed">Whether you're a beginner looking to learn AWS or an experienced developer wanting to contribute, there's a place for you in ACCC. Find signups and join our community on <a href="https://linktr.ee" className="text-brand-light-cyan font-semibold hover:text-white transition">Linktree</a>.</p>
+          <p className="text-white/70 max-w-2xl mx-auto leading-relaxed">Whether you're a beginner looking to learn AWS or an experienced developer wanting to contribute, there's a place for you in ACC. Find signups and join our community on <a href="https://www.meetup.com/aws-cloud-club-at-george-washington-university/" className="text-brand-light-cyan font-semibold hover:text-white transition">Meetup</a>.</p>
         </div>
       </div>
 
@@ -41,9 +41,14 @@ export default function About(){
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {boardMembers.map((member, idx) => (
             <div key={idx} className="card flex flex-col items-center text-center hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300 transform hover:-translate-y-1">
-              <div className="w-24 h-24 bg-brand-teal/40 rounded-full border-2 border-brand-light-cyan/50 mb-4 flex items-center justify-center hover:border-brand-light-cyan transition duration-300">
-                <span className="text-brand-light-cyan font-semibold">Photo</span>
+              <div className="w-24 h-24 rounded-full border-2 border-brand-light-cyan/50 mb-4 overflow-hidden hover:border-brand-light-cyan transition duration-300">
+                <img
+                  src={member.image}
+                  alt={`${member.name} headshot`}
+                  className="w-full h-full object-cover"
+                />
               </div>
+
               <h3 className="text-xl font-bold text-white mb-2">{member.name}</h3>
               <p className="text-brand-light-cyan font-medium">{member.role}</p>
             </div>
@@ -55,11 +60,11 @@ export default function About(){
         <h3 className="text-2xl font-bold mb-6 text-white/70">Semester Schedule</h3>
         <div className="card hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300">
           <div className="w-full h-64 bg-brand-teal/30 border-2 border-dashed border-brand-cyan/50 rounded-lg flex items-center justify-center text-brand-light-cyan font-semibold">
-            Timeline image placeholder
+            <img src="/savedate.png" alt="Events Timeline" className="w-full h-full object-contain" />
           </div>
-          <p className="mt-4 text-sm text-white/60 text-center">Tips: Use a wide PNG/SVG for best results.</p>
+          <p className="mt-4 text-sm text-white/60 text-center">Semester Outline</p>
         </div>
-      </div>
+      </div>aç
     </section>
   )
 }

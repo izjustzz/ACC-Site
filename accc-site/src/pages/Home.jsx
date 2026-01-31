@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Home(){
+export default function Home({ setRoute }){
   return (
     <section className="py-20">
       <div className="flex flex-col items-center justify-center text-center mb-16">
@@ -9,22 +9,22 @@ export default function Home(){
 
         <div className="flex flex-wrap gap-4 justify-center">
           <a href="https://www.meetup.com/aws-cloud-club-at-george-washington-university/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-gradient-to-r from-brand-cyan to-brand-light-cyan hover:shadow-lg hover:shadow-brand-light-cyan/50 text-dark-bg px-6 py-3 rounded-lg font-semibold shadow-md transition transform hover:scale-105 duration-200">Join</a>
-          <button className="inline-flex items-center gap-2 border-2 border-brand-light-cyan text-brand-light-cyan px-6 py-3 rounded-lg font-semibold hover:bg-brand-light-cyan/10 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-200">Attend</button>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 text-white/80 hover:text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 hover:shadow-lg transition duration-200">Get involved</a>
+          <button onClick={() => setRoute('events')} className="inline-flex items-center gap-2 border-2 border-brand-light-cyan text-brand-light-cyan px-6 py-3 rounded-lg font-semibold hover:bg-brand-light-cyan/10 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-200">Attend</button>
+          <a href="https://instagram.com/gwucloud" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-white/10 text-white/80 hover:text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/20 hover:shadow-lg transition duration-200">Follow Us!</a>
         </div>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20">
-        <aside className="card md:col-span-1 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300 transform hover:-translate-y-1">
+        <aside className="card md:col-span-1 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300 transform hover:-translate-y-1 flex flex-col justify-center items-center text-center">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-light-cyan/10 to-brand-cyan/10 rounded-xl"></div>
           <div className="relative">
             <h3 className="text-2xl font-bold mb-3 text-brand-light-cyan">Upcoming event</h3>
-            <p className="text-white/90 text-lg">Intro to AWS Lambda — Jan 27 • 6:00pm</p>
-            <p className="mt-4 text-sm text-brand-light-cyan font-medium">RSVP on Linktree</p>
+            <p className="text-white/90 text-lg">Intro to cloud <br></br>Wednesday, Feb 4th</p>
+            <a href="https://www.meetup.com/aws-cloud-club-at-george-washington-university/" target="_blank" rel="noopener noreferrer" className="mt-4 text-sm text-brand-light-cyan font-medium hover:text-brand-light-cyan/80 transition">RSVP on Meetup</a>
           </div>
         </aside>
 
-        <div className="card md:col-span-1 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300 transform hover:-translate-y-1">
+        <div className="card md:col-span-1 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300 transform hover:-translate-y-1 flex flex-col justify-center items-center text-center">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-light-cyan/10 to-brand-cyan/10 rounded-xl"></div>
           <div className="relative">
             <h3 className="text-2xl font-bold mb-3 text-brand-light-cyan">Learn AWS</h3>
@@ -32,7 +32,7 @@ export default function Home(){
           </div>
         </div>
 
-        <div className="card md:col-span-1 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300 transform hover:-translate-y-1">
+        <div className="card md:col-span-1 hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300 transform hover:-translate-y-1 flex flex-col justify-center items-center text-center">
           <div className="absolute inset-0 bg-gradient-to-br from-brand-light-cyan/10 to-brand-cyan/10 rounded-xl"></div>
           <div className="relative">
             <h3 className="text-2xl font-bold mb-3 text-brand-light-cyan">Join us</h3>
