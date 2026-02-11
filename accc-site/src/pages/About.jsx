@@ -56,6 +56,7 @@ export default function About(){
         </div>
       </div>
 
+{/*
       <div className="mt-20 pt-12 border-t border-brand-cyan/20">
         <h3 className="text-2xl font-bold mb-6 text-white/70">Semester Schedule</h3>
         <div className="card hover:shadow-lg hover:shadow-brand-light-cyan/30 transition duration-300">
@@ -64,7 +65,9 @@ export default function About(){
           </div>
           <p className="mt-4 text-sm text-white/60 text-center">Semester Outline</p>
         </div>
-      </div>aç
+      </div>
+      */}
     </section>
   )
 }
+
