@@ -5,7 +5,7 @@ export default function Home({ setRoute }){
     <section className="py-20">
       <div className="flex flex-col items-center justify-center text-center mb-16">
       {/*  <h1 className="text-6xl md:text-7xl font-black mb-6 bg-gradient-to-r from-brand-light-cyan to-brand-cyan bg-clip-text text-transparent">GW AWS Cloud Club</h1> */}
-      <h1 className="text-6xl md:text-7xl font-black mb-6 text-white">GW AWS Cloud Club</h1>
+      <h1 className="text-6xl md:text-7xl font-black mb-6 text-white">GW HELLO Cloud Club</h1>
 
         <p className="text-lg text-white/80 max-w-2xl mb-10 leading-relaxed">We bring students together to learn, build, and deploy on AWS. Workshops, project nights, and industry talks with a focus on practical skills.</p>
 
