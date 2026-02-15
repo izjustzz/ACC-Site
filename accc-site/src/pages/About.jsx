@@ -7,7 +7,7 @@ export default function About(){
     { name: 'Kate Lustgarten', role: 'Operations Director', image: '/Eboard/kate.jpeg' },
     { name: 'Narwan Joyenda', role: 'Programming Director', image: '/Eboard/narwan.jpeg' },
     { name: 'Stacey Chen', role: 'Design Director', image: '/Eboard/stacey.jpeg' },
-    { name: 'Malak Al-Hassan', role: 'Communications Director', image: '/Eboard/malak.jpeg' }
+    { name: 'Malak Al-Imari', role: 'Communications Director', image: '/Eboard/malak.jpeg' }
   ]
 
   return (

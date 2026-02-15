@@ -9,8 +9,8 @@ export default function Events(){
 
       <div className="flex justify-center">
         <img 
-          src="/savedate.png" 
-          alt="Events Timeline" 
+          src="/Meeting2.png" 
+          alt="Meeting 2 Flyer" 
           className="max-w-2xl w-full h-auto rounded-lg shadow-lg"
         />
       </div>
